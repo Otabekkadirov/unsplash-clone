@@ -4,8 +4,6 @@ const formInput = document.getElementById("form-input");
 const gallery = document.querySelector("#gallery");
 const galleryColumns = document.querySelectorAll(".gallery-column");
 
-console.log(galleryColumns);
-
 const accessKey = "EN5cUaY0nxFxeJWWbdRGzCAGwjkUnZwAvh6TvGlVTfQ";
 const unsplashUrl = `https://api.unsplash.com/search/photos/?client_id=${accessKey}&per_page=25&query=`;
 
@@ -28,7 +26,7 @@ function appendImages(images) {
         const imgDiv = document.createElement("div");
         imgDiv.className = "img-box";
         imgDiv.innerHTML = `
-                    <a href="${image.links.download}" target="_blank">
+                    <a href="${image.urls.small_s3}">
                         <img 
                             src="${image.urls.small}" 
                             alt="${image.alt_description}"
