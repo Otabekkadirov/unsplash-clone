@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --font-main: "Poppins", sans-serif;
+    --color-dark: #111;
+    --color-gray: #767676;
+    --color-bg: #eee;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: #000;
+    color: white;
+}
+html {
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+/* header */
+.header {
+    background-color: var(--color-bg);
+    color: var(--color-gray);
+    padding: 40px 0 25px;
+    box-shadow: 0 0px 10px 0px var(--color-gray);
+}
+.wrapper {
+    max-width: 1200px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+.header__title {
+    font-size: 3rem;
+}
+
+/* main */
+.main {
+    padding-top: 30px;
+}
+
+.main__form {
+    display: flex;
+
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 var(--color-gray);
+    & input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background-color: var(--color-bg);
+        color: var(--color-dark);
+        font-size: 1.2rem;
+        padding: 15px 25px;
+    }
+}
+.btn {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    font-weight: 700;
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+.photos__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.img-container {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 20px 0 15px;
+        box-shadow: 0 0px 10px 0px var(--color-gray);
+    }
+    .header__title {
+        font-size: 2rem;
+    }
+    .main__form {
+        border-radius: 10px;
+        & input {
+            flex-shrink: 1;
+            font-size: 1rem;
+            padding: 15px;
+        }
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 15px 10px;
+    }
+    .main {
+        padding-top: 10px;
+    }
+    .photos__wrapper {
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .img-container {
+        margin-bottom: 10px;
+    }
+}

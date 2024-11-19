@@ -1,4 +1,0 @@
-{
-    "Access key": "EN5cUaY0nxFxeJWWbdRGzCAGwjkUnZwAvh6TvGlVTfQ",
-    "Secret key": "n9sIzVslZSI5VRliosZgW57TR-1ImBCVP_6kW4IRJos"
-}
